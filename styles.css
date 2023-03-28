@@ -1,0 +1,9 @@
+/*Style the body*/
+body {
+  background: black;
+  color: white;
+}
+/*Set height fr the map*/
+#ISSMap {
+  height: 400px;
+}

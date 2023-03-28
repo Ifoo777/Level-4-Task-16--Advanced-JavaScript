@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Leaflet CSS file  to display Map-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+
+    <!--jQuery library imported-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!--Leaflet's Java input to display Map -->
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
+    <!--CSS link Style sheet-->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!--JavaScript file linked-->
+    <script type="text/javascript" src="main.js" defer></script>
+
+    <title>ISS Position</title>
+  </head>
+  <body>
+    <!--Display position in longitude and latitude-->
+    <h1><u>International Space Station Position</u></h1>
+
+    <!--Button to refresh the page/data-->
+    <button id="refresh">Refresh Position</button><br /><br />
+
+    <!--Table to display information about satellite-->
+    <table>
+      <tr>
+        <td>Longitude:</td>
+        <td id="long"></td>
+      </tr>
+      <tr>
+        <td>Latitude:</td>
+        <td id="lat"></td>
+      </tr>
+      <tr>
+        <td>Time:</td>
+        <td id="timeUpdate"></td>
+      </tr>
+    </table>
+
+    <!--Display on a map the position-->
+    <div id="ISSMap"></div>
+  </body>
+</html>
